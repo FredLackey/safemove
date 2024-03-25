@@ -1,0 +1,55 @@
+{
+  "name"        : "safemove",
+  "version"     : "0.0.0",
+  "description" : "Safely move files from one location to another",
+  "main"        : "src/index.js",
+  "preferGlobal": true,
+  "bin"         : {
+    "safemove": "./src/command.js"
+  },
+  "scripts": {
+    "lint"        : "eslint ./src",
+    "lint:fix"    : "eslint ./src --fix src/**/*.js",
+    "markdown"    : "node ./src/command.js --markdown",
+    "markdown:cli": "node ./src/command.js --markdown-cli"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "git+https://github.com/FredLackey/safemove.git"
+  },
+  "keywords": [
+    "move",
+    "copy",
+    "files",
+    "recursive",
+    "safe",
+    "recuse",
+    "robocopy",
+    "rsync"
+  ],
+  "author": {
+    "name" : "Fred Lackey",
+    "email": "fred.lackey@gmail.com",
+    "url"  : "http://www.fredlackey.com"
+  },
+  "license": "Apache-2.0",
+  "bugs"   : {
+    "url": "https://github.com/FredLackey/safemove/issues"
+  },
+  "homepage"       : "https://github.com/FredLackey/safemove#readme",
+  "devDependencies": {
+    "eslint"                   : "^8.57.0",
+    "eslint-config-airbnb"     : "^19.0.4",
+    "eslint-config-standard"   : "^17.1.0",
+    "eslint-plugin-import"     : "^2.29.1",
+    "eslint-plugin-jsx-a11y"   : "^6.8.0",
+    "eslint-plugin-node"       : "^11.1.0",
+    "eslint-plugin-promise"    : "^6.1.1",
+    "eslint-plugin-react"      : "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-standard"   : "^4.1.0"
+  },
+  "dependencies": {
+    "yargs"                : "^17.7.2"
+  }
+}

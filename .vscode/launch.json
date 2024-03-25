@@ -1,0 +1,95 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "CLI 00 - Markdown",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/command.js",
+      "args": [
+        "--cli-markdown"
+      ]
+    },    {
+      "type": "node",
+      "request": "launch",
+      "name": "CLI 01 - Empty",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/command.js",
+      "args": [
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "CLI 02 - Copy",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/command.js",
+      "args": [
+        "--source",
+        "/Users/flackey/Library/CloudStorage/Dropbox",
+        "--target",
+        "/Users/flackey/Library/CloudStorage/Box-Box/Personal/from Dropbox/Dropbox",
+        "--nooverwrite"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "CLI 03 - Overwrite",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/command.js",
+      "args": [
+        "--source",
+        "/Users/flackey/Library/CloudStorage/Dropbox",
+        "--target",
+        "/Users/flackey/Library/CloudStorage/Box-Box/Personal/from Dropbox/Dropbox"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "CLI 04 - Limits",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/command.js",
+      "args": [
+        "--source",
+        "/Users/flackey/Library/CloudStorage/Dropbox",
+        "--target",
+        "/Users/flackey/Library/CloudStorage/Box-Box/Personal/from Dropbox/Dropbox",
+        "--console",
+        "--limit",
+        "2"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "CLI 05 - No Limits",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/src/command.js",
+      "args": [
+        "--source",
+        "/Users/flackey/Library/CloudStorage/Dropbox",
+        "--target",
+        "/Users/flackey/Library/CloudStorage/Box-Box/Personal/from Dropbox/Dropbox",
+        "--console",
+      ]
+    },
+  ]
+}
